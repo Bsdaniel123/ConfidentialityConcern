@@ -1,0 +1,49 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Confidentiality</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css"/>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <header class="ms-welcome__header ms-bgColor-neutralLighter">
+        <div class="subheader"><span class="span1"><i class="ms-Icon ms-Icon--Ribbon"></i></span> Have a Confidentiality Concern?</div>
+    </header>
+    <main id="app-body" class="ms-welcome__main" style="display: none;">
+        <section id="sideload-msg" class="ms-welcome__main"></section>
+
+        <p class="bodytext">It's important to fully understand what is considered a confidentiality breach before you submit a concern. Please review the links below to confirm your issue is valid.</p>
+        
+        <div role="button" id="reviewconcern" class="divbutton ms-font-x2">
+            <i class="fa fa-arrow-right"></i><span class="ms-Button-label1">Review our Confidentiality Concern policies</span>
+        </div>
+
+        <div role="button" id="Codeofethics" class="divbutton1 ms-font-xl">
+            <i class="fa fa-arrow-right"></i><span class="ms-Button-label1">Chat with our ethics bot</span>
+        </div>
+
+        <p class="bodytext"> Do not select "Submit Concern" until after you've read the information above. Once submitted someone may contact you regarding your concern.</p>
+        
+        <div role="button" id="submitconcern" class="ms-welcome__action ms-Button ms-Button--hero ms-font-xl">
+            <span class="ms-Button-label2">Submit Concern</span>
+        </div>
+    </main>
+    <div class="footer">&copy; 2021 Accenture Inc.  All Rights Reserved</div>
+</body>
+
+</html>

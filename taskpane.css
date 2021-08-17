@@ -1,0 +1,183 @@
+/* 
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
+ html,
+ body {
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ ul {
+     margin: 0;
+     padding: 0;
+ }
+ .ms-Fabric {
+     font-size: 16px;
+     margin-top: -4px;
+ }
+ .ms-welcome__header {
+    padding: 10px;
+    padding-bottom: 13px;
+    padding-top: 25px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: white;
+}
+
+ .ms-welcome__main {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: left;
+    align-items: left;
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+    padding: 10px 20px;
+}
+ 
+ .ms-welcome__main > h2 {
+     width: 100%;
+     text-align: left;
+}
+ 
+ .ms-welcome__features {
+     list-style-type: none;
+     margin-top: 20px;
+}
+ 
+ .ms-welcome__features.ms-List .ms-ListItem {
+     padding-bottom: 20px;
+     display: -webkit-flex;
+     display: flex;
+}
+ 
+ .ms-welcome__features.ms-List .ms-ListItem > .ms-Icon {
+     margin-right: 10px;
+ }
+ 
+ .ms-welcome__action.ms-Button--hero {
+     margin-top: 60px;
+     padding-left: 45px;
+ }
+ 
+.ms-Button.ms-Button--hero .ms-Button-label1 {
+  color: #6c009e;
+}
+
+.ms-Button-label1 {
+    color: #6c009e;
+    font-weight: medium;
+}
+
+.ListButton {
+    float: left;
+    padding-top: 0px;
+    padding-right: 5px;
+    font-size: 20px;
+    color: #6c009e;
+}
+
+.ms-Button.ms-Button--hero:hover .ms-Button-label1,
+.ms-Button.ms-Button--hero:focus .ms-Button-label1{
+    border-style: solid;
+    border-color: #6c009e;
+    border-width: 3px;
+    color: #6c009e;
+    cursor: pointer; 
+}
+
+.divbutton:hover{
+    border-width: 100px;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    border-radius: -4px;
+    border: 2px solid #6c009e;
+    height: 50px;
+    text-align: left;
+    font: 18px 'Segoe UI';
+    color: #333333; 
+}
+
+.divbutton1:hover{
+    border-width: 100px;
+    margin-top: 15px;
+    padding: 2px;
+    cursor: pointer;
+    display: flex;
+    border-radius: -4px;
+    border: 2px solid #6c009e;
+    height: 26px;
+    text-align: left;
+    font: 18px 'Segoe UI';
+    color: #333333; 
+}
+
+.ms-Button-label2{
+    background: #6c009e;
+    border-radius: 31px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.ms-font-xl{
+    font-size: 18px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.ms-font-x2{
+    font-size: 18px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+b {
+    font-weight: medium;
+}
+
+.fa, .fas {
+    font-weight: 600;
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    margin-right: 10px;
+    line-height: 1;
+    color: #6c009e; 
+}
+
+.footer {
+    position: fixed;
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 30px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #F5F7FA;
+    color: #333333;
+    text-align: left;
+    font: 14px 'Segoe UI';
+    border: 1px solid #D1DBE3;
+}

@@ -1,0 +1,40 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Confidentiality</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css"/>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <header class="ms-welcome__header ms-bgColor-neutralLighter">
+        <div class="subheader"><span class="span1"><i class="ms-Icon ms-Icon--Ribbon"></i></span> Have a Confidentiality Concern?</div>
+    </header>
+    <main id="app-body" class="ms-welcome__main" style="display: none;">
+
+        <p class="bodytext"> Your confidentiality concern has been submitted for review. </p>
+
+        <p class="bodytext"> Please note that a reviewer may contact you for additional information. </p>
+        
+        <div role="button" id="submitconcern" class="ms-welcome__action ms-Button ms-Button--hero ms-font-xl">
+            <span class="ms-Button-label2">Done</span>
+        </div>
+    </main>
+    <div class="footer">&copy; 2021 Accenture Inc.  All Rights Reserved</div>
+</body>
+
+</html>
